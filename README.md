@@ -48,11 +48,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain the difference between `Relational Databases` and `SQL`.
 
+Database Management System (DBMS) is a software that is used to define, create and maintain a database and provides controlled access to the data. Relational Database Management System (RDBMS) is an advanced version of a DBMS.
+
 2. Why do tables need a `primary key`?
+
+Each database table needs a primary key because it ensures row-level accessibility. ... The values that compose a primary key column are unique; no two values are the same. Each table has one and only one primary key, which can consist of one or many columns.
 
 3. What is the name given to a table column that references the primary key on another table.
 
+A Foreign Key
+
 4. What do we need in order to have a _many to many_ relationship between two tables.
+
+We have to create a new Table
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

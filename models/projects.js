@@ -5,6 +5,7 @@ module.exports = {
     get,
     getById,
     insert,
+    findTasks,
     update,
     remove,
   };
@@ -19,6 +20,14 @@ module.exports = {
       .first();
   }
   
+  function findTasks(id) {
+    return db("tasks")
+    .join("projects", "projects.id", "tasks.project_id")
+    .where("tasks.project_id", id)
+    .select("tasks.id", "projects.name","projects.description", "tasks.description", "tasks.notes")
+}
+
+
 
   function insert(post) {
     return db('projects')
